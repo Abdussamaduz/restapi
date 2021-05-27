@@ -1,10 +1,13 @@
 const router = require('express').Router()
-const UsersGetController = require('../Controllers/UsersGetController')
-const UsersSignUpPostController = require('../Controllers/UsersSignUpPostController')
+const UsersGetController = require('../controllers/UsersGetController')
+const UsersSignUpPostController = require('../controllers/UsersSignUpPostController')
+
+
 
 router.get('/', UsersGetController);
-router.post('/signup', UsersSignUpPostController)
+router.get('/signup', UsersSignUpPostController)
 
 module.exports = {
-    router, path: '/users'
+    router: router,
+    path: '/users'
 }

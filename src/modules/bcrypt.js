@@ -1,8 +1,7 @@
 const bcrypt = require('bcrypt')
 
-module.exports.generateHash = async function generateHash(word) {
-    console.log(word);
-    let salt = await bcrypt.genSalt(10)
+module.exports.generateHash = function generateHash(word) {
+    let salt = await bcrypt.genSalt(10);
     return bcrypt.hash(word, salt)
 }
 

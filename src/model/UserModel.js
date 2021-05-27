@@ -1,4 +1,5 @@
 const bcrypt = require('bcrypt')
+
 module.exports = (Sequelize, sequelize) => {
     return sequelize.define('users', {
         id: {
@@ -14,5 +15,6 @@ module.exports = (Sequelize, sequelize) => {
             type: Sequelize.DataTypes.STRING(64),
             allowNull: false
         }
+        
     })
 }
