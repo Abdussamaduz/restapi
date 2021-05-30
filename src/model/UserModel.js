@@ -15,6 +15,6 @@ module.exports = (Sequelize, sequelize) => {
             type: Sequelize.DataTypes.STRING(64),
             allowNull: false
         }
-        
     })
+    
 }

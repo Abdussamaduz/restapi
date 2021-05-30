@@ -5,6 +5,5 @@ const HomeGetController = require('../controllers/HomeGetController')
 router.get('/', HomeGetController)
 
 module.exports = {
-    router: router,
-    path: '/'
+    router, path: '/'
 }
